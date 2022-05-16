@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: "Poppins";
 }
-body{
-    
-}
 
 .navbar{
     display: flex;
@@ -91,9 +88,6 @@ li a:hover, .dropdown:hover .dropbtn {
     height: 38vw;
     
 }
-.secone-icons{
-  
-}
 .secone-icons img{
 
     width: 1.75vw;
@@ -148,9 +142,7 @@ li a:hover, .dropdown:hover .dropbtn {
     font-weight: 500;
     cursor: pointer;
 }
-.circle{
 
-}
 .circle img{
    margin-left: -14%; 
    position: absolute; 
@@ -326,7 +318,6 @@ li a:hover, .dropdown:hover .dropbtn {
     color: #4F4F4F;
 }
 
-.arrow{}
 
 #learnmorearrow{
     cursor: pointer;
