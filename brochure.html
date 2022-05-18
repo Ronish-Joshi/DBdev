@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .mySlides{
+           display: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+     
+    <header class="navbar">
+        <div id="navbar-one">
+            <li><a href="index.html"><img id="logo" src="img/logo.png" alt=""></a></li>
+        </div>
+        <div class="navbar-two">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <!--<li><a href="#">Products</a> <img id="arrowone" src="arrow.svg" alt=""></li>-->
+            <li class="dropdown">
+                <a style="font-weight: 500;color: #102E4A;" href="javascript:void(0)" class="dropbtn">Products</a><img id="arrowone" src="img/arrow.svg" alt="">
+                <div class="dropdown-content">
+                  <a href="#">Videos</a>
+                  <a href="brochure.html">Brochures & Catalogues</a>
+                  <a href="#">Logos</a>
+                  <a href="#">Articles and Blogs</a>
+                  <a href="#">Social Media Posts</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Marketing for you </a> <img id="arrow" src="img/arrow.svg" alt="">
+                <div class="dropdown-content">
+                  <a href="#">Becoming a Retainer Client</a>
+                  <a href="#">Marketing & Branding Consultations</a>
+                 
+                </div>
+              </li>
+            
+        </div>
+        <div class="navbar-three">
+            <li><a href="#">Contact Us</a></li>
+        </div>
+    </header>
+
+   
+
+    <div class="bro-section-one">
+        <div class="bro-secone-content">
+            <h4>BROCHURES AND CATALOUGES</h4>
+            <h1>Why do you <br>need Brochures?</h1>
+            <p>Talking about your business is not enough; with<br>
+                 brochures, you can now show your customers your<br>
+                  business. At DigitalBrew, we don’t just create<br> good 
+                  designs - we create something meaningful<br> that talks to your customers.</p>
+            <button class="bro-secone-button">View Our Work</button>
+        </div>
+        <div class="bro-one-img">
+            <img src="img/firstbrochure.png" alt="">
+        </div>
+    </div>
+
+    <div class="bro-section-two">
+        <div class="bro-sectwo-content">
+            <h4>DIGITALBREW WORK</h4>
+            <h1>Our Works</h1>
+            <p>We have better brochures to pull out pages from as <br>samples now. We won’t use the same ones that are<br> currently on the website.</p>
+            
+        </div>
+            <div class="slide-container">
+            
+                <div>
+                    <img onclick="plusDivs(-1)" id="slidebtn" src="img/leftbutton.svg" alt="">
+                </div>
+                <div class="slider">
+                    <img class="mySlides" src="img/bro1.png" style="width:40%">
+                    <img class="mySlides" src="img/bro2.png" style="width:40%">
+                    <img class="mySlides" src="img/bro3.png" style="width:40%">
+                </div>
+                <div>
+                    <img onclick="plusDivs(1)" id="slidebtn" src="img/rightbutton.svg" alt="">
+                </div>
+            </div>
+            <div class="slidebutton">
+                <button class="demo" onclick="currentDiv(1)"></button>
+                <button class="demo" onclick="currentDiv(2)"></button>
+                <button class="demo" onclick="currentDiv(3)"></button>
+            </div>
+    </div>
+
+
+    <div class="bro-section-third">
+        <div class="bro-section-third-normal-content">
+            <div class="bro-section-third-one">
+                <h4>DESIGN PROCESS</h4>
+                <h1>The Brochure <br>Design Process</h1>
+            </div>
+            <div class="bro-section-third-two">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore  incididunt<br> ut labore  incididunt ut labore.</p>
+            </div>
+        </div>
+        <div class="bro-section-third-slide-content">
+            <div class="resh">
+                <h1>01</h1>
+                <h2>Understanding who<br>you're talking to</h2>
+                <h3>At DigitalBrew, we customize your<br> communication and design to appeal<br> to your customers.</h3>
+            </div>
+            <div class="data">
+                <h1>02</h1>
+                <h2>Crafting your<br>communication</h2>
+                <h3>We create your brochure as an extension<br> of your brand. After studying and learning<br> how your business communicates with its <br>customers regularly, we’ll create content<br> for your brochure that makes your <br>customers feel at home.</h3>
+            </div>
+            <div class="strategy">
+                <h1>03</h1>
+                <h2>Creating Designs<br><span style="color: transparent;">hello</span></h2>
+                <h3>Design leaves a lasting impression on<br> people’s minds. At DigitalBrew, we<br> believe in creating designs that are<br> functional and aesthetic.</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="bro-pricing">
+        <div class="bro-pricing-content">
+            <h4>PRICING</h4>
+            <h1>Pick your <br>perfect Plan</h1>
+        </div>
+        <div class="pricing-boxes">
+            <div class="box1">
+                <h3>Bi-Fold<br>Brochure</h3>
+                <h1>₹5,999</h1>
+                <h4>+GST</h4>
+            </div>
+            <div class="box2">
+                <h3>Book-Style<br>Brochure</h3>
+                <h1>₹7,999</h1>
+                <h4>+GST</h4>
+            </div>
+            <div class="box3">
+                <h3>Tri-Fold<br>Brochure</h3>
+                <h1>₹9,999</h1>
+                <h4>+GST</h4>
+            </div>
+        </div>
+        <h3 id="bro-pricing-bottom-text">*The prices are subject to increase/decrease based<br> on the length and other parameters of your<br> requirement.</h3>
+    </div>
+
+ <form>
+        <div class="form-text" style="margin-right: 10%">
+            <h1 style="font-size: 3.5vw;">Get in touch with <br> Our Team</h1>
+            <h4>Talk with our team for your queries and about your business.</h4>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Name" name="" id="">
+            <input type="text" placeholder="Email" style="margin-top: 5%;" name="" id="">
+            <input type="text" id="msginp" placeholder="Message" name="" id="">
+            <button>Send</button>
+        </div>
+    </form>
+
+    <footer>
+        <div class="logotext">
+            <img src="img/logowhite.png" alt="">
+            <h5>DigitalBrew, 2022 Allright reserved.</h5>
+        </div>
+        <div class="footer-contents">
+            <div class="firstfootercontent">
+                <h3 style="color: white;">Menu</h3>
+                <h3>Home</h3>
+                <h3>About</h3>
+                <h3>Product</h3>
+                <h3>Consultation</h3>
+            </div>
+            <div class="secondfootercontent">
+                <h3 style="color: white;">Contact Us</h3>
+                <h3>digitalbrew.com</h3>
+                <h3>555-444-222</h3>
+                <h3>New Delhi, India</h3>
+            </div>
+            <div class="thirdfootercontent">
+                <h3 style="color: white;">Social Media</h3>
+                <div class="footersocialicons">
+                    <img src="img/fbiconwhite.svg" alt="">
+                    <img src="img/instaiconwhite.svg" alt="">
+                    <img src="img/linkediniconwhite.svg" alt="">
+                </div>
+                <img id="subarrow" src="img/subarrow.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+       var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" .blueslidebtn", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " .blueslidebtn";
+}
+        </script>
+</body>
+</html>
