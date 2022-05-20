@@ -896,6 +896,205 @@ form{
     margin-top: 7%;
     margin-bottom: 10%;
 }
+
+/*========================VIDEO PAGE===========================*/
+
+.vid-first-section{
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+    align-items: center;
+    margin-left: 11%;
+    margin-top: 5%;
+}
+
+.vid-first-section h4{
+    font-weight: 600;
+    font-size: 1.2vw;
+    letter-spacing: 0.5vw;
+    color: #102E4A;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+.vid-first-section h1{
+    margin-top: 5%;
+    font-size: 3.6vw;
+    font-weight: 600;
+}
+
+.vid-first-section p{
+    font-size: 1.34vw;
+    line-height: 186.5%;
+    font-weight: 500;
+    color: #696969;
+    margin-top: -5%;
+}
+
+#vid-first-section-button{
+    background-color: #102E4A;
+    color: white;
+    margin-top: 12%;
+    padding: 1.3vw;
+    width: 14vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+.first-video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+#ytvidone{
+    width: 66%;
+    height: 30vw;
+    border: none;
+    border-radius: 0.7vw;
+}
+/*==========SECTION TWO====================*/
+.vid-section-two{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 76%;
+    margin: auto;
+    margin-top: 12%;  
+
+}
+.vid-one-img iframe{
+    width: 35vw;
+    height: 33vw;
+    margin-left: 0%;
+    margin-top: 11%;
+    border: none;
+    border-radius: 1vw;
+}
+
+.vid-secone-content h4{
+    font-weight: 600;
+    font-size: 1.2vw;
+    letter-spacing: 0.5vw;
+    color: #102E4A;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+.vid-secone-content h1{
+    font-size: 3vw;
+    font-weight: 600;
+    padding-top: 9%;
+    padding-bottom: 6%;
+    
+}
+
+.vid-secone-content p{
+    
+    font-size: 1.2vw;
+    line-height: 186.5%;
+    font-weight: 500;
+    color: #696969;
+    margin-top: 5%;
+    
+}
+
+.vid-secone-content button{
+    background-color: #102E4A;
+    color: white;
+    margin-top: 12%;
+    padding: 1.3vw;
+    width: 14vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+/*==============FOURTH SECTION=================*/
+
+.vid-fourth-secone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+.vidboxone{
+    background-color: #F2F2F2;
+    height: 35vw;
+    width: 34vw;
+    padding-left: 3.8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vidboxone h5{
+    font-weight: 500;
+    color: #102E4A;
+    font-size: 1.8vw;
+}
+
+.vidboxone h6{
+    font-weight: 400;
+    color: #102E4A;
+    font-size: 0.9vw;
+    line-height: 180%;
+    padding-top: 7%;
+    padding-bottom: 10%;
+}
+#vidgif{
+    width: 30vw;
+    height: 20vw;
+    margin-right: 4vw;
+}
+#samplearrow{
+    width: 8vw;
+    cursor: pointer;
+}
+.checkparts img{
+    width: 18vw;
+    margin-left: 35%;
+    margin-top: 15%;
+}
+.pricing-boxes h2{
+    font-weight: 400;
+    font-size: 1.1vw;
+    margin-top: 15%;
+}
+
+/*==================================ARTICLE AND BLOGS===========================*/
+.artfirst{
+    margin-top: 3%;
+}
+.article-first-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-first-section-content{
+    width: 80%;
+    
+}
+.singlebtn{
+    background-color: #102E4A;
+    color: white;
+    margin-top: 12%;
+    padding: 1.3vw;
+    width: 14vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+    margin-top: -5%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 /*===============================FORM===========================*/
 
 /*=======================FOOTER============================*/

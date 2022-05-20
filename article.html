@@ -6,7 +6,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .mySlides{
+           display: none;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -18,10 +24,10 @@
         </div>
         <div class="navbar-two">
             <li><a href="index.html">Home</a></li>
-            <li><a style="font-weight: 500;color: #102E4A;" href="about.html">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <!--<li><a href="#">Products</a> <img id="arrowone" src="arrow.svg" alt=""></li>-->
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a><img id="arrowone" src="img/arrow.svg" alt="">
+                <a style="font-weight: 500;color: #102E4A;" href="javascript:void(0)" class="dropbtn">Products</a><img id="arrowone" src="img/arrow.svg" alt="">
                 <div class="dropdown-content">
                   <a href="video.html">Videos</a>
                   <a href="brochure.html">Brochures & Catalogues</a>
@@ -45,74 +51,50 @@
         </div>
     </header>
 
-    
-    <div class="about-first-section">
-        <div class="about-first-section-one">
-            <h4>ABOUT DIGITALBREW</h4>
-            <h1>A Small Team,<br>with Big Dreams</h1>
+   
+    <div class="artfirst">
+
+        <div class="article-first-section">
+                <img class="article-first-section-content" src="img/articlefirstsection.svg" alt="">
         </div>
-        <div class="about-first-section-two">
-            <p>We’re a fun-loving, growing family. Whether you’re looking <br>to join our team, or sign up with us as a client we’d love to<br> have you here with us.</p>
-        </div>
+
+        <button style="margin-left: 10%;" class="singlebtn">View Our Work</button>
     </div>
 
-    <div class="about-second-section">
-        <h4>MEET OUR TEAM</h4>
-       
-        <div class="about-teams">
-            <div class="about-pics-one">
-                <div class="picone">
-                    <img src="img/us.jpg" alt="">
-                    <h2>Rena Ray</h2>
-                    <h3>DESIGNER</h3>
-                </div>
-                <div class="picone">
-                    <img src="img/us.jpg" alt="">
-                    <h2>Parth Bhavnani</h2>
-                    <h3>FOUNDER, CEO</h3>
-                </div>
-                <div class="picone">
-                    <img src="img/us.jpg" alt="">
-                    <h2>Akriti Baghel</h2>
-                    <h3>CONTENT WRITER</h3>
-                </div>
-            </div>
-            <div class="about-pics-two">
-                <div class="picone">
-                    <img src="img/us.jpg" alt="">
-                    <h2>John Doe</h2>
-                    <h3>CO-FOUNDER</h3>
-                </div>
-                <div class="picone">
-                    <img src="img/us.jpg" alt="">
-                    <h2>Kitty Kat</h2>
-                    <h3>MEMBER</h3>
-                </div>
-            </div>
-        </div>
+
+    <div class="article-second-section" style="margin-top: 10%">
+        <img style="width: 100%;" src="img/articlesecondsection.svg" alt="">
     </div>
 
-    <div class="about-third-section">
-        <div class="about-third-content">
-            <h4>THREE THINGS</h4>
-            <h1>Three things that <br>matter to us most.</h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore </h3>
-            <div class="tick-contents">
-                <div class="tick-first">
-                    <img src="img/tick.svg" alt=""><h5>Enjoy the process</h5>
-                    <img id="tick2" src="img/tick.svg" alt=""><h5>Meet Deadlines</h5>
-                </div>
-                <div class="tick-second">
-                    <img src="img/tick.svg" alt=""><h5>Strategize</h5>
-                </div>
-            </div>
-        </div>
 
-        
-        <img src="img/aboutthirdimg.svg" alt="">
+    <div class="article-third-section">
+        <img style="width: 100%;" src="img/articlethirdsection.svg" alt="">
+    </div>
+
+    <div class="article-fourth-section">
+        <img style="width: 100%;" src="img/articlefourthsection.svg" alt="">
+
+    </div>
+
+
+    <div class="article-fifth-section">
+        <img style="width: 100%;" src="img/articlefifthsection.svg" alt="">
         
     </div>
-  
+
+ <form>
+        <div class="form-text" style="margin-right: 10%">
+            <h1 style="font-size: 3.5vw;">Get in touch with <br> Our Team</h1>
+            <h4>Talk with our team for your queries and about your business.</h4>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Name" name="" id="">
+            <input type="text" placeholder="Email" style="margin-top: 5%;" name="" id="">
+            <input type="text" id="msginp" placeholder="Message" name="" id="">
+            <button>Send</button>
+        </div>
+    </form>
+
     <footer>
         <div class="logotext">
             <img src="img/logowhite.png" alt="">
@@ -143,6 +125,8 @@
             </div>
         </div>
     </footer>
+
+
 
 </body>
 </html>
