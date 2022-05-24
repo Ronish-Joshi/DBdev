@@ -4,7 +4,54 @@
     box-sizing: border-box;
     font-family: "Poppins";
 }
+.mobile-version{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+   .pc-version{
+       display: none;
+   }
+   .mobile-version{
+       display: block;
+   }
+  }
 
+.mobilenav{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#mobilemenucontent{
+    margin-top: 3%;
+    padding-left: 10%;
+    list-style: none;
+    background-color: lightgray;
+    font-size: 2.8vw;
+    display: none;
+}
+#mobilemenucontent li{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    
+}
+#mobilemenucontent li a{
+    text-decoration: none;
+}
+#mobilemenusubproducts{
+    display: none;
+}
+
+#mobilemenusubmarketing{
+    display: none;
+}
+  
+ 
+/*=============================*/
+  
 .navbar{
     display: flex;
     list-style: none;
@@ -60,7 +107,7 @@ li a:hover, .dropdown:hover .dropbtn {
     z-index: 1;
     border-top: 0.2vw solid #102E4A;
     margin-top: 0.3%;
-    
+    transition: all 1s linear;
   }
   
   .dropdown-content a {
@@ -676,10 +723,6 @@ form{
 .bro-section-two{
     margin-top: 10%;
 }
-.bro-two-img{
-    
-}
-
 .bro-sectwo-content h4{
     font-weight: 600;
     font-size: 1.2vw;
@@ -763,6 +806,107 @@ form{
     height: 0.9vw;
     background-color: #102E4A;
 }
+
+/*========GALLERY============*/
+
+.brochure-images{
+
+}
+.brochure-images img{
+    width: 20vw;
+}
+.brochure-images-containone{
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+}
+
+.container {
+    width: 70%;
+    margin: 8vw auto; 
+    margin-bottom: 10vw;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 2vw; 
+  }
+  
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+filter: drop-shadow(0.2vw 0.3vw 0.2vw rgba(0, 0, 0, 0.25));
+  }
+  
+  .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 2;  */
+    /* grid-row: 1 / span 2; */
+  }
+  
+  .gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  
+    /** Alternative Syntax **/
+    /* grid-column: 3 / span 2;  */
+    /* grid-row: 1 / span 2; */
+  }
+  
+  .gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  
+    /** Alternative Syntax **/
+    /* grid-column: 5 / span 4;
+    grid-row: 1 / span 5; */
+  }
+  
+  .gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 4;  */
+    /* grid-row: 3 / span 3; */
+  }
+  
+  .gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+  
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 4; */
+    /* grid-row: 6 / span 3; */
+  }
+  
+  .gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+  
+    /** Alternative Syntax **/
+    /* grid-column: 5 / span 4; */
+    /* grid-row: 6 / span 3; */
+  }
 
 /*=====================THRID SECTION==============*/
 
@@ -1088,11 +1232,29 @@ form{
     cursor: pointer;
 }
 
+.singlebtnmob{
+    background-color: #102E4A;
+    color: white;
+    margin-top: 12%;
+    padding: 2.2vw;
+    width: 25vw;
+    font-size: 2vw;
+    font-weight: 500;
+    cursor: pointer;
+}
 
 
 
 
 
+/*====================Logo First Section==============*/
+
+.logo-first-section{
+    margin-left: 11%;
+}
+.logo-first-section img{
+    width: 83vw;
+}
 
 
 /*===============================FORM===========================*/

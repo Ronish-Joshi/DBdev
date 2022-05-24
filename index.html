@@ -13,6 +13,7 @@
 </head>
 <body>
 
+    <div class="pc-version">
      
     <header class="navbar">
         <div id="navbar-one">
@@ -27,15 +28,15 @@
                 <div class="dropdown-content">
                   <a href="video.html">Videos</a>
                   <a href="brochure.html">Brochures & Catalogues</a>
-                  <a href="#">Logos</a>
+                  <a href="logo.html">Logos</a>
                   <a href="article.html">Articles and Blogs</a>
-                  <a href="#">Social Media Posts</a>
+                  <a href="social.html">Social Media Posts</a>
                 </div>
               </li>
               <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Marketing for you </a> <img id="arrow" src="img/arrow.svg" alt="">
                 <div class="dropdown-content">
-                  <a href="#">Becoming a Retainer Client</a>
+                  <a href="marketingfirst.html">Becoming a Retainer Client</a>
                   <a href="#">Marketing & Branding Consultations</a>
                  
                 </div>
@@ -215,6 +216,108 @@
             </div>
         </div>
     </footer>
+</div>
 
+
+
+
+
+    <div class="mobile-version">
+
+        <div class="mobilenav">
+            <div class="toplogo">
+                <img src="img/logo.png" style="width: 20vw;" alt="">
+            </div>
+            <div class="bars">
+                <img onclick="myFunction();" src="img/bars.svg" style="width: 7vw;cursor: pointer" alt="">
+            </div>
+           
+        </div>
+        <div id="mobilemenucontent">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a onclick="myFunction2();">Products</a><img style="margin-left: 1vw" src="img/arrow.svg" alt=""></li>
+            <div style="margin-left: 5%;" id="mobilemenusubproducts">
+                <li><a href="">Videos</a></li>
+                <li><a href="">Brochures and Catalogues</a></li>
+                <li><a href="">Logos</a></li>
+                <li><a href="">Articles and Blogs</a></li>
+                <li><a href="">Social Media Posts</a></li>
+            </div>
+            <li><a onclick="myFunction3();">Marketing For you</a><img style="margin-left: 1vw" src="img/arrow.svg" alt=""></li>
+            <div style="margin-left: 5%;" id="mobilemenusubmarketing">
+                <li><a href="">Becoming a Retainer Client</a></li>
+                <li><a href="">Marketing and Branding Consultations</a></li>
+            </div>
+        </div>
+
+
+
+
+        <div class="indexmobilefirstsection">
+            <img draggable="false" src="img/indexmobfirst.svg" style="width: 65vw;margin-top: 10%;margin-left: 10%;" alt="">
+            <div class="indexmobfirstbtns" style="margin-top: 5%;">
+                <button style="margin-top: -8%; margin-left: 9%;border: none;" class="singlebtnmob">Learn More</button>
+                <button style="margin-top: -8%; margin-left: 1%;border: none;background-color: transparent;color: black" class="singlebtnmob">Watch Our Video</button>
+            </div>
+        </div>
+    
+    
+        <div class="indexmobilehands">
+            <img draggable="false" style="width: 100%; margin-top: 5%" src="img/handsmobile.png" alt="">
+        </div>
+    
+
+        <div class="indexmobilesecondsection">
+            <img draggable="false" src="img/indexmobsecond.svg" style="width: 100%;" alt="">
+        </div>
+
+        <div class="indexmobilethirdsection">
+            <img draggable="false" src="img/indexmobthird.svg" style="width: 100%;" alt="">
+            <img draggable="false" src="img/learnmorearrow.svg" style="margin-top: -18%;margin-left: 60%;width: 16vw;cursor: pointer;" alt="">
+        </div>
+
+        <div class="indexmobilefourthsection">
+            <img draggable="false" src="img/indexmobfourth.svg" style="width: 100%;" alt="">
+            <img draggable="false" src="img/learnmorearrow.svg" style="margin-top: -20%;margin-left: 13%;width: 12vw;cursor: pointer;" alt="">
+           
+        </div>
+        <img draggable="false" src="img/learnmorearrow.svg" style="margin-top: -20%;margin-left: 55.5%;width: 12vw;cursor: pointer;" alt="">
+
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mobilemenucontent");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction2() {
+            var x = document.getElementById("mobilemenusubproducts");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction3() {
+            var x = document.getElementById("mobilemenusubmarketing");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
