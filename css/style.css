@@ -499,6 +499,41 @@ form{
     color: #173755;
     cursor: pointer;
 }
+
+.mobform{
+    display: flex;
+    height: 26vw;
+    background: linear-gradient(269.47deg, #102E4A 3.5%, #5D94C8 244.65%);
+    justify-content: center;
+    align-items: center;
+}
+
+.mobform .inputs{
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -80%;
+}
+.mobform .inputs input{
+    width: 75vw;
+    height: 12vw;
+    border: none;
+    border-radius: 2vw;
+    padding-left: 5vw;
+    font-size: 3vw;
+}
+.mobform .inputs button{
+    width: 40vw;
+    padding: 2vw;
+    border-radius: 5vw;
+    font-size: 4vw;
+    font-weight: 400;
+    color: #173755;
+    cursor: pointer;
+    border: none;
+}
+
 #msginp{
     margin-top: 5%;
     margin-bottom: 5%;
@@ -1236,9 +1271,9 @@ filter: drop-shadow(0.2vw 0.3vw 0.2vw rgba(0, 0, 0, 0.25));
     background-color: #102E4A;
     color: white;
     margin-top: 12%;
-    padding: 2.2vw;
-    width: 25vw;
-    font-size: 2vw;
+    padding: 3vw;
+    width: 35vw;
+    font-size: 3vw;
     font-weight: 500;
     cursor: pointer;
 }
