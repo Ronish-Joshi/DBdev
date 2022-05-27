@@ -29,17 +29,19 @@
     margin-top: 3%;
     padding-left: 10%;
     list-style: none;
-    background-color: lightgray;
+    background-color: rgb(241, 241, 241);
     font-size: 2.8vw;
     display: none;
 }
 #mobilemenucontent li{
     padding-top: 2vw;
     padding-bottom: 2vw;
+    cursor: pointer;
     
 }
 #mobilemenucontent li a{
     text-decoration: none;
+    color: black;
 }
 #mobilemenusubproducts{
     display: none;
@@ -60,7 +62,7 @@
     align-items: center;
     font-size: 1.26vw;
     font-weight: 400;
-   
+
 }
 .navbar-two{
     display: flex;
@@ -99,7 +101,8 @@ li a:hover, .dropdown:hover .dropbtn {
   }
   
   .dropdown-content {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 15vw;
@@ -107,7 +110,7 @@ li a:hover, .dropdown:hover .dropbtn {
     z-index: 1;
     border-top: 0.2vw solid #102E4A;
     margin-top: 0.3%;
-    transition: all 1s linear;
+    transition: 0.5s;
   }
   
   .dropdown-content a {
@@ -122,8 +125,9 @@ li a:hover, .dropdown:hover .dropbtn {
   .dropdown-content a:hover {background-color: #f1f1f1;}
   
   .dropdown:hover .dropdown-content {
-    display: block;
-  
+   visibility: visible;
+   opacity: 1;
+   
   }
 
   /*====================MIDDLE CONTENT==========================*/
@@ -370,6 +374,7 @@ li a:hover, .dropdown:hover .dropbtn {
     margin-left: -45%;
 }
 
+
 /*=============================FOURTH SECTION============================*/
 
 
@@ -456,7 +461,7 @@ li a:hover, .dropdown:hover .dropbtn {
     margin-left: 68%;
 }
 /*==========================FIRST PAGE FORM===============================*/
-form{
+.foram{
     display: flex;
     height: 26vw;
     background: linear-gradient(269.47deg, #102E4A 3.5%, #5D94C8 244.65%);
@@ -499,7 +504,33 @@ form{
     color: #173755;
     cursor: pointer;
 }
-
+/*===================================CONTACT FORM======================*/
+.contact-form{
+    position: absolute;
+    margin-top: -46%;
+    margin-left: 51%;
+}
+.contact-form div{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form div input{
+    width: 18vw;
+    border: none;
+    border-bottom: 0.11vw solid #748697;
+    outline: none;
+    padding: 0.4vw;
+    font-size: 1vw;
+}
+.contact-form div input:focus{
+    border-bottom: 0.12vw solid black;
+}
+.contact-form span{
+    color: #173755;
+    font-weight: 500;
+    font-size: 1vw;
+}
+/*=================MOBILE FORM==========================*/
 .mobform{
     display: flex;
     height: 26vw;
@@ -636,6 +667,58 @@ form{
     margin: auto;
     margin-top: 0%;
 }
+
+
+/*=============================*/
+
+
+.aboutmobsecondsection h4{
+    font-weight: 600;
+    font-size: 2.5vw;
+    letter-spacing: 0.5vw;
+    color: #102E4A;
+    font-family: 'Roboto';
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.about-teams-mobile{
+    margin: auto;
+    background-color: #F5F5F5;
+    width: 86%;
+    border-radius: 1.2vw;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.about-teams-mobile img{
+     width: 30vw;
+    margin-bottom: 18%;
+    border-radius: 100%;
+    box-shadow: 0.25vw 0.25vw 0.6vw #b0b0b0;
+}
+.about-teams-mobile h2{
+    font-weight: 500;
+    font-size: 5vw;
+    margin-bottom: 2%;
+    margin-top: -15%;
+}
+.about-teams-mobile h3{
+    font-weight: 400;
+    font-size: 2.8vw;
+    margin-bottom: 15%;
+}
+.about-pics-one-mobile{
+    
+}
+.about-pics-two-mobile{
+    
+}
+
+
 
 /*================ABOUT THIRD SECTION=================*/
 
@@ -1264,7 +1347,12 @@ filter: drop-shadow(0.2vw 0.3vw 0.2vw rgba(0, 0, 0, 0.25));
     font-size: 1.1vw;
     font-weight: 500;
     margin-top: -5%;
+    border: none;
     cursor: pointer;
+    transition: 0.2s;
+}
+.singlebtn:hover{
+    background-color: #20507D;
 }
 
 .singlebtnmob{
@@ -1277,7 +1365,6 @@ filter: drop-shadow(0.2vw 0.3vw 0.2vw rgba(0, 0, 0, 0.25));
     font-weight: 500;
     cursor: pointer;
 }
-
 
 
 

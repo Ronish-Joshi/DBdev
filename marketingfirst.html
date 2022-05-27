@@ -17,7 +17,7 @@
 </head>
 <body>
 
-     
+     <div class="pc-version">
     <header class="navbar">
         <div id="navbar-one">
             <li><a href="index.html"><img id="logo" src="img/logo.png" alt=""></a></li>
@@ -39,15 +39,14 @@
               <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Marketing for you </a> <img id="arrow" src="img/arrow.svg" alt="">
                 <div class="dropdown-content">
-                  <a href="#">Becoming a Retainer Client</a>
-                  <a href="#">Marketing & Branding Consultations</a>
-                 
+                    <a href="marketingfirst.html">Becoming a Retainer Client</a>
+                    <a href="marketingsecond.html">Marketing & Branding Consultations</a>
                 </div>
               </li>
             
         </div>
         <div class="navbar-three">
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </div>
     </header>
 
@@ -72,16 +71,16 @@
     </div>
 
 
- <form>
-        <div class="form-text" style="margin-right: 10%">
-            <h1 style="font-size: 3.5vw;">Get in touch with <br> Our Team</h1>
-            <h4>Talk with our team for your queries and about your business.</h4>
+ <form style="background: white;">
+        <div class="form-text" style="margin-right: 10%;">
+            <h1 style="font-size: 3.5vw; color: black">Get in touch with <br> Our Team</h1>
+            <h4 style="color: black">Talk with our team for your queries and about your business.</h4>
         </div>
         <div class="inputs">
-            <input type="text" placeholder="Name" name="" id="">
-            <input type="text" placeholder="Email" style="margin-top: 5%;" name="" id="">
-            <input type="text" id="msginp" placeholder="Message" name="" id="">
-            <button>Send</button>
+            <input style="border: 0.15vw solid black;" type="text" placeholder="Name" name="" id="">
+            <input style="border: 0.15vw solid black;margin-top: 5%;" type="text" placeholder="Email" name="" id="">
+            <input style="border: 0.15vw solid black;" type="text" id="msginp" placeholder="Message" name="" id="">
+            <button style="background-color:#102E4A;color: white;border: none;">Send</button>
         </div>
     </form>
 
@@ -115,8 +114,131 @@
             </div>
         </div>
     </footer>
+</div>
 
 
 
+<div class="mobile-version">
+    <div class="mobilenav">
+        <div class="toplogo">
+            <img src="img/logo.png" style="width: 20vw;" alt="">
+        </div>
+        <div class="bars">
+            <img onclick="myFunction();" src="img/bars.svg" style="width: 7vw;cursor: pointer" alt="">
+        </div>
+       
+    </div>
+    <div id="mobilemenucontent">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a onclick="myFunction2();">Products</a><img style="margin-left: 1vw" src="img/arrow.svg" alt=""></li>
+        <div style="margin-left: 5%;" id="mobilemenusubproducts">
+            <li><a href="video.html">Videos</a></li>
+            <li><a href="brochure.html">Brochures and Catalogues</a></li>
+            <li><a href="logo.html">Logos</a></li>
+            <li><a href="article.html">Articles and Blogs</a></li>
+            <li><a href="social.html">Social Media Posts</a></li>
+        </div>
+        <li><a onclick="myFunction3();">Marketing For you</a><img style="margin-left: 1vw" src="img/arrow.svg" alt=""></li>
+        <div style="margin-left: 5%;" id="mobilemenusubmarketing">
+            <li><a href="marketingfirst.html">Becoming a Retainer Client</a></li>
+            <li><a href="marketingsecond.html">Marketing and Branding Consultations</a></li>
+        </div>
+        <li><a href="contact.html">Contact Us</a></li>
+    </div>
+
+
+    <div class="marketingonefirstsection" style="margin-top: 5%;">
+        <img draggable="false" src="img/marketingonemobfirst.svg" style="width: 100%;" alt="">
+        <button class="singlebtnmob" style="margin-left: 32%; margin-top: -8%;">See How</button>
+    </div>
+
+    <div class="marketingonesecondsection" style="margin-top: 20%;">
+        <img draggable="false" src="img/marketingonemobsecond.svg" style="width: 100%;" alt="">
+    </div>
+
+    <div class="marketingonethirdsection">
+        <img draggable="false" src="img/marketingonemobthird.svg" style="width: 100%;" alt="">
+    </div>
+
+    <div class="marketingonefourthsection">
+        <img draggable="false" src="img/marketingonemobfourth.svg" style="width: 100%;" alt="">
+    </div>
+
+
+
+     
+    <div class="indexmobileformsection">
+        <img draggable="false" src="img/indexmobformwhite.svg" style="width: 100%;" alt="">
+        <div class="mobform" style="background: white;">
+            <div class="inputs">
+                <input style="border: 0.3vw solid black" type="text" placeholder="Email" name="" id="">
+                <input style="border: 0.3vw solid black" type="text" id="msginp" placeholder="Message" name="" id="">
+                <button style="background-color:#102E4A;color: white;border: none">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logotext">
+            <img src="img/logowhite.png" alt="">
+            <h5>DigitalBrew, 2022 Allright reserved.</h5>
+        </div>
+        <div class="footer-contents">
+            <div class="firstfootercontent">
+                <h3 style="color: white;">Menu</h3>
+                <h3>Home</h3>
+                <h3>About</h3>
+                <h3>Product</h3>
+                <h3>Consultation</h3>
+            </div>
+            <div class="secondfootercontent">
+                <h3 style="color: white;">Contact Us</h3>
+                <h3>digitalbrew.com</h3>
+                <h3>555-444-222</h3>
+                <h3>New Delhi, India</h3>
+            </div>
+            <div class="thirdfootercontent">
+                <h3 style="color: white;">Social Media</h3>
+                <div class="footersocialicons">
+                    <img src="img/fbiconwhite.svg" alt="">
+                    <img src="img/instaiconwhite.svg" alt="">
+                    <img src="img/linkediniconwhite.svg" alt="">
+                </div>
+                <img id="subarrow" src="img/subarrow.svg" alt="">
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("mobilemenucontent");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    function myFunction2() {
+        var x = document.getElementById("mobilemenusubproducts");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    function myFunction3() {
+        var x = document.getElementById("mobilemenusubmarketing");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>

@@ -17,7 +17,7 @@
 </head>
 <body>
 
-     
+     <div class="pc-version">
     <header class="navbar">
         <div id="navbar-one">
             <li><a href="index.html"><img id="logo" src="img/logo.png" alt=""></a></li>
@@ -39,15 +39,15 @@
               <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Marketing for you </a> <img id="arrow" src="img/arrow.svg" alt="">
                 <div class="dropdown-content">
-                  <a href="#">Becoming a Retainer Client</a>
-                  <a href="#">Marketing & Branding Consultations</a>
+                    <a href="marketingfirst.html">Becoming a Retainer Client</a>
+                    <a href="marketingsecond.html">Marketing & Branding Consultations</a>
                  
                 </div>
               </li>
             
         </div>
         <div class="navbar-three">
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </div>
     </header>
 
@@ -57,7 +57,7 @@
         <div class="vid-first-section-one">
             <h4>VIDEOS</h4>
             <h1>Create an Impact</h1>
-            <button id="vid-first-section-button">Get Started</button>
+            <button style="margin-top: 8%;" class="singlebtn">Get Started</button>
         </div>
         <div class="vid-first-section-two">
             <p>
@@ -80,7 +80,7 @@
             <h4>WHY VIDEOS?</h4>
             <h1>Do you really need a <br>video?</h1>
             <p>Videos are powerful, but it may not be relevant to every <br>business. Watch this video to learn more about whether<br> a video may be right for you. If it’s not particularly useful<br> for your business, but you want one anyway, we’ll be<br> happy to help you with suggestions on how to leverage<br> videos to grow your business.</p>
-            <button class="vid-secone-button">I want a video</button>
+            <button class="singlebtn">I want a video</button>
         </div>
         <div class="vid-one-img">
             <iframe
@@ -232,8 +232,136 @@
             </div>
         </div>
     </footer>
+</div>
 
 
+
+<div class="mobile-version">
+    <div class="mobilenav">
+        <div class="toplogo">
+            <img src="img/logo.png" style="width: 20vw;" alt="">
+        </div>
+        <div class="bars">
+            <img onclick="myFunction();" src="img/bars.svg" style="width: 7vw;cursor: pointer" alt="">
+        </div>
+       
+    </div>
+    <div id="mobilemenucontent">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a onclick="myFunction2();">Products</a><img style="margin-left: 1vw" src="img/arrow.svg" alt=""></li>
+        <div style="margin-left: 5%;" id="mobilemenusubproducts">
+            <li><a href="video.html">Videos</a></li>
+            <li><a href="brochure.html">Brochures and Catalogues</a></li>
+            <li><a href="logo.html">Logos</a></li>
+            <li><a href="article.html">Articles and Blogs</a></li>
+            <li><a href="social.html">Social Media Posts</a></li>
+        </div>
+        <li><a onclick="myFunction3();">Marketing For you</a><img style="margin-left: 1vw" src="img/arrow.svg" alt=""></li>
+        <div style="margin-left: 5%;" id="mobilemenusubmarketing">
+            <li><a href="marketingfirst.html">Becoming a Retainer Client</a></li>
+            <li><a href="marketingsecond.html">Marketing and Branding Consultations</a></li>
+        </div>
+        <li><a href="contact.html">Contact Us</a></li>
+    </div>
+
+    <div class="videosmobfirstsection" style="margin-top: 5%;">
+        <img draggable="false" src="img/videosmobfirst.svg" style="width: 100%;" alt="">
+        <iframe style="width: 80%;height: 40vw;border: none;margin-left: 10%;margin-top: -20%"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        <button class="singlebtnmob" style="margin-top: 10%; margin-left: 31%">Get Started</button>
+    </div>
+
+    <div class="videosmobsecondsection" style="margin-top: 5%;">
+        <img draggable="false" src="img/videosmobsecond.svg" style="width: 100%;" alt="">
+        <iframe style="width: 80%;height: 40vw;border: none;margin-left: 10%;margin-top: -20%"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        <button class="singlebtnmob" style="margin-top: 10%; margin-left: 31%">Get Started</button>
+    </div>
+
+    <div class="videosmobthirdsection" style="margin-top: 5%;">
+        <img draggable="false" src="img/videosmobthird.svg" style="width: 100%;" alt="">
+    </div>
+
+    <div class="videosmobfourthsection" style="margin-top: 5%;">
+        <img draggable="false" src="img/videosmobfourth.svg" style="width: 100%;" alt="">
+    </div>
+
+
+    
+    <div class="indexmobileformsection">
+        <img draggable="false" src="img/indexmobform.svg" style="width: 100%;" alt="">
+        <div class="mobform">
+            <div class="inputs">
+                <input type="text" placeholder="Email" name="" id="">
+                <input type="text" id="msginp" placeholder="Message" name="" id="">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logotext">
+            <img src="img/logowhite.png" alt="">
+            <h5>DigitalBrew, 2022 Allright reserved.</h5>
+        </div>
+        <div class="footer-contents">
+            <div class="firstfootercontent">
+                <h3 style="color: white;">Menu</h3>
+                <h3>Home</h3>
+                <h3>About</h3>
+                <h3>Product</h3>
+                <h3>Consultation</h3>
+            </div>
+            <div class="secondfootercontent">
+                <h3 style="color: white;">Contact Us</h3>
+                <h3>digitalbrew.com</h3>
+                <h3>555-444-222</h3>
+                <h3>New Delhi, India</h3>
+            </div>
+            <div class="thirdfootercontent">
+                <h3 style="color: white;">Social Media</h3>
+                <div class="footersocialicons">
+                    <img src="img/fbiconwhite.svg" alt="">
+                    <img src="img/instaiconwhite.svg" alt="">
+                    <img src="img/linkediniconwhite.svg" alt="">
+                </div>
+                <img id="subarrow" src="img/subarrow.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("mobilemenucontent");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    function myFunction2() {
+        var x = document.getElementById("mobilemenusubproducts");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    function myFunction3() {
+        var x = document.getElementById("mobilemenusubmarketing");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 </html>

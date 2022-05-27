@@ -3,21 +3,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <style>
-        .mySlides{
-           display: none;
-        }
+       #slider {
+  position: relative;
+  width: 55%;
+  height: 40vw;
+  margin: 150px auto;
+  font-family: 'Helvetica Neue', sans-serif;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+input[type=radio] {
+  position: relative;
+  top: 108%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  margin: 0 15px 0 0;
+  opacity: 0.4;
+  transform: translateX(-83px);
+  cursor: pointer;
+}
+
+
+input[type=radio]:nth-child(5) {
+  margin-right: 0px;
+}
+
+input[type=radio]:checked {
+  opacity: 1;
+}
+
+
+
+
+#slider label,
+#slider label img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+ 
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 400ms ease;
+}
+
+
+
+/* Slider Functionality */
+
+/* Active Slide */
+#s1:checked ~ #slide1,
+ #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3,
+   #s4:checked ~ #slide4,
+    #s5:checked ~ #slide5 {
+  
+  transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked ~ #slide2,
+ #s2:checked ~ #slide3,
+  #s3:checked ~ #slide4,
+   #s4:checked ~ #slide5,
+    #s5:checked ~ #slide1 {
+  
+  transform: translate3d(20%, 0, -100px);
+}
+
+
+/* Next to Next Slide */
+#s1:checked ~ #slide3,
+ #s2:checked ~ #slide4,
+  #s3:checked ~ #slide5,
+   #s4:checked ~ #slide1,
+    #s5:checked ~ #slide2 {
+  
+  transform: translate3d(40%, 0, -250px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide4,
+ #s2:checked ~ #slide5,
+  #s3:checked ~ #slide1,
+   #s4:checked ~ #slide2,
+    #s5:checked ~ #slide3 {
+  
+  transform: translate3d(-40%, 0, -250px);
+}
+
+/* Previous Slide */
+#s1:checked ~ #slide5,
+ #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2,
+   #s4:checked ~ #slide3,
+    #s5:checked ~ #slide4 {
+  
+  transform: translate3d(-20%, 0, -100px);
+}
+
     </style>
     <title>Document</title>
 </head>
 <body>
 
-     
+    <div class="pc-version">
     <header class="navbar">
         <div id="navbar-one">
             <li><a href="index.html"><img id="logo" src="img/logo.png" alt=""></a></li>
@@ -39,15 +146,15 @@
               <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Marketing for you </a> <img id="arrow" src="img/arrow.svg" alt="">
                 <div class="dropdown-content">
-                  <a href="#">Becoming a Retainer Client</a>
-                  <a href="#">Marketing & Branding Consultations</a>
+                    <a href="marketingfirst.html">Becoming a Retainer Client</a>
+                    <a href="marketingsecond.html">Marketing & Branding Consultations</a>
                  
                 </div>
               </li>
             
         </div>
         <div class="navbar-three">
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </div>
     </header>
 
@@ -73,6 +180,19 @@
 
     <div class="article-fourth-section">
         <img style="width: 100%;" draggable="false" src="img/articlefourthsection.svg" alt="">
+        <section id="slider" style="margin-top: -55%;">
+            <input type="radio" name="slider" id="s1" checked>
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3">
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+          
+            <label for="s1" id="slide1"><img src="img/slider1.svg" alt=""></label>
+            <label for="s2" id="slide2"><img src="img/slider2.svg" alt=""></label>
+            <label for="s3" id="slide3"><img src="img/slider3.svg" alt=""></label>
+            <label for="s4" id="slide4"><img src="img/slider4.svg" alt=""></label>
+            <label for="s5" id="slide5"><img src="img/slider1.svg" alt=""></label>
+          </section>
 
     </div>
 
@@ -125,8 +245,132 @@
             </div>
         </div>
     </footer>
+</div>
 
 
+
+<div class="mobile-version">
+    <div class="mobilenav">
+        <div class="toplogo">
+            <img src="img/logo.png" style="width: 20vw;" alt="">
+        </div>
+        <div class="bars">
+            <img onclick="myFunction();" src="img/bars.svg" style="width: 7vw;cursor: pointer" alt="">
+        </div>
+       
+    </div>
+    <div id="mobilemenucontent">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a onclick="myFunction2();">Products</a><img style="margin-left: 1vw" src="img/arrow.svg" alt=""></li>
+        <div style="margin-left: 5%;" id="mobilemenusubproducts">
+            <li><a href="video.html">Videos</a></li>
+            <li><a href="brochure.html">Brochures and Catalogues</a></li>
+            <li><a href="logo.html">Logos</a></li>
+            <li><a href="article.html">Articles and Blogs</a></li>
+            <li><a href="social.html">Social Media Posts</a></li>
+        </div>
+        <li><a onclick="myFunction3();">Marketing For you</a><img style="margin-left: 1vw" src="img/arrow.svg" alt=""></li>
+        <div style="margin-left: 5%;" id="mobilemenusubmarketing">
+            <li><a href="marketingfirst.html">Becoming a Retainer Client</a></li>
+            <li><a href="marketingsecond.html">Marketing and Branding Consultations</a></li>
+        </div>
+        <li><a href="contact.html">Contact Us</a></li>
+    </div>
+
+
+    <div class="articlemobfirstsection" style="margin-top: 7%;">
+        <img draggable="false" src="img/articlemobfirst.svg" width="100%" alt="">
+        <button class="singlebtnmob" style="margin-top: -1%;margin-left: 32%">View Our Work</button>
+    </div>
+
+    <div class="articlemobsecondsection" style="margin-top: 15%;">
+        <img draggable="false" src="img/articlemobsecond.svg" width="100%" alt="">
+    </div>
+
+    <div class="articlemobthirdsection">
+        <img draggable="false" src="img/articlemobthird.svg" width="100%" alt="">
+    </div>
+
+    <div class="articlemobfourthsection">
+        <img draggable="false" src="img/articlemobfourth.svg" width="100%" alt="">
+    </div>
+
+    <div class="articlemobfifthsection">
+        <img draggable="false" src="img/articlemobfifth.svg" width="100%" alt="">
+    </div>
+    <div class="indexmobileformsection">
+        <img draggable="false" src="img/indexmobform.svg" style="width: 100%;" alt="">
+        <div class="mobform">
+            <div class="inputs">
+                <input type="text" placeholder="Email" name="" id="">
+                <input type="text" id="msginp" placeholder="Message" name="" id="">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logotext">
+            <img src="img/logowhite.png" alt="">
+            <h5>DigitalBrew, 2022 Allright reserved.</h5>
+        </div>
+        <div class="footer-contents">
+            <div class="firstfootercontent">
+                <h3 style="color: white;">Menu</h3>
+                <h3>Home</h3>
+                <h3>About</h3>
+                <h3>Product</h3>
+                <h3>Consultation</h3>
+            </div>
+            <div class="secondfootercontent">
+                <h3 style="color: white;">Contact Us</h3>
+                <h3>digitalbrew.com</h3>
+                <h3>555-444-222</h3>
+                <h3>New Delhi, India</h3>
+            </div>
+            <div class="thirdfootercontent">
+                <h3 style="color: white;">Social Media</h3>
+                <div class="footersocialicons">
+                    <img src="img/fbiconwhite.svg" alt="">
+                    <img src="img/instaiconwhite.svg" alt="">
+                    <img src="img/linkediniconwhite.svg" alt="">
+                </div>
+                <img id="subarrow" src="img/subarrow.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("mobilemenucontent");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    function myFunction2() {
+        var x = document.getElementById("mobilemenusubproducts");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    function myFunction3() {
+        var x = document.getElementById("mobilemenusubmarketing");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 </html>
